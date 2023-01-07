@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "team1": "Ювентус",
+    "img1": "https://pm.by/content/uploads/F/3460.png",
+    "team2": "Удинезе",
+    "img2": "https://pm.by/content/uploads/F/5563.png",
+    "time": "18:15",
+    "date": "Сегодня",
+    "П1": 1.72,
+    "X": 3.80,
+    "П2": 5.30
+  },
+  {
+    "id": 2,
+    "team1": "Вильярреал",
+    "img1": "https://pm.by/content/uploads/F/3488.png",
+    "team2": "Реал Мадрид",
+    "img2": "https://pm.by/content/uploads/F/8256.png",
+    "time": "20:00",
+    "date": "Сегодня",
+    "П1": 3.40,
+    "X": 3.70,
+    "П2": 2.05
+  },
+  {
+    "id": 3,
+    "team1": "Монца",
+    "img1": "https://pm.by/content/uploads/F/53926.png",
+    "team2": "Интер Милан",
+    "img2": "https://pm.by/content/uploads/F/5498.png",
+    "time": "22:45",
+    "date": "7 янв.",
+    "П1": 6.00,
+    "X": 4.40,
+    "П2": 1.57
+  }
+]

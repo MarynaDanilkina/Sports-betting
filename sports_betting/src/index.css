@@ -1,13 +1,26 @@
-body {
+:root {
+    --primary: #46cdc4;
+    --midPrimary: #2ba199;
+    --darkPrimary: #0e1a10;
+    --black: #141515;
+    --lightBlack: #191a1a;
+    --grey: #505353;
+    --lightGrey: #787d7d;
+    --white: #f7fdfc;
+    --red: #cd4646;
+    --midRed: #a12b2b;
+}
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  text-decoration: none;
+  color:#000;
+  font-size: 24px;
 }
+h3, h2, h1, p, li, ul{
+  font-family: 'RF Dewi Expanded';
+  margin: 0;
+  padding: 0;
+}
+  
