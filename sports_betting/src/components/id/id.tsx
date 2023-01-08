@@ -11,6 +11,7 @@ function ID() {
   const { id } = useParams();
   const navigate = useNavigate();
   const { teamId } = useAppSelector((state) => state);
+  const goBack = () => navigate(-1);
 
   useEffect(() => {
     dispatch(addTeamId(id));
@@ -20,18 +21,26 @@ function ID() {
   }
   return (
     <div className="teamID__container">
-      <div className="teamID">
-        <div className="team__container">
-          <p>{teamId[0].team1}</p>
-          <img src={teamId[0].img1} alt={teamId[0].team1} />
+      <div className="teamID__info">
+        <div className="back__container" onClick={goBack}>
+          <p className="back">&#8617;</p>
+          <p className="back__team">
+            {teamId[0].team1} / {teamId[0].team2}
+          </p>
         </div>
-        <div className="time__container">
-          <p className="date__id">{teamId[0].date}</p>
-          <p className="time__id">{teamId[0].time}</p>
-        </div>
-        <div className="team__container">
-          <img src={teamId[0].img2} alt={teamId[0].team2} />
-          <p>{teamId[0].team2}</p>
+        <div className="teamID">
+          <div className="team__container-id team1">
+            <p>{teamId[0].team1}</p>
+            <img src={teamId[0].img1} alt={teamId[0].team1} />
+          </div>
+          <div className="time__container">
+            <p className="date__id">{teamId[0].date}</p>
+            <p className="time__id">{teamId[0].time}</p>
+          </div>
+          <div className="team__container-id team2">
+            <img src={teamId[0].img2} alt={teamId[0].team2} />
+            <p>{teamId[0].team2}</p>
+          </div>
         </div>
       </div>
     </div>

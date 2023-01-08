@@ -2,21 +2,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 55vw;
+  margin: auto;
+  margin-top: 50px;
+}
+.teamID__info{
+  width: 100%;
 }
 .teamID{
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
 }
-.team__container{
+.team__container-id{
+  align-items: center;
   display: flex;
   gap: 5px;
+  width: 20vw;
 }
-.team__container img{
+.team__container-id.team1{
+  justify-content: flex-end;
+}
+.team__container-id img{
   width: 60px;
   height: 60px;
 }
-.team__container p{
+.team__container-id p{
   font-weight: 600;
   font-size: 25px;
 }
@@ -24,6 +37,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 8vw;
 }
 .date__id{
   font-size: 18px;
@@ -32,4 +46,19 @@
 .time__id{
   font-size: 22px;
   color: var(--darkPrimary);
+}
+.back__container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.back__container:hover{
+  cursor: pointer;
+  color: aqua;
+}
+.back{
+  font-size: 20px;
+}
+.back__team{
+  font-size: 11px;
 }
