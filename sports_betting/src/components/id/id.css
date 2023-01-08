@@ -1,0 +1,35 @@
+.teamID__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teamID{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.team__container{
+  display: flex;
+  gap: 5px;
+}
+.team__container img{
+  width: 60px;
+  height: 60px;
+}
+.team__container p{
+  font-weight: 600;
+  font-size: 25px;
+}
+.time__container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.date__id{
+  font-size: 18px;
+  color: var(--lightGrey);
+}
+.time__id{
+  font-size: 22px;
+  color: var(--darkPrimary);
+}

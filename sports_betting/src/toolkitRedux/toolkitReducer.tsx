@@ -3,6 +3,7 @@ import { Idata } from "interfaces/interfaces";
 import data from "./data.json";
 export const initialState = {
   data: [] as Idata[],
+  teamId: [] as Idata[],
 };
 
 export const fetchData = createAsyncThunk("user/fetchData", async () => {
@@ -11,10 +12,14 @@ export const fetchData = createAsyncThunk("user/fetchData", async () => {
 export const reduserSlice = createSlice({
   name: "user",
   initialState,
-  reducers: {},
+  reducers: {
+    addTeamId(state, action) {
+      const id = action.payload;
+      state.teamId = state.data.filter((team) => team.id == +id!);
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchData.fulfilled, (state, action) => {
-      console.log(action);
       state.data = action.payload;
     });
   },
