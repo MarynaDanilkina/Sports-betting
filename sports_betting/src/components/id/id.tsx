@@ -1,3 +1,5 @@
+import Button__result from "components/button__result/button__result";
+import Check from "components/check/Check";
 import Loading from "components/Loading/loading";
 import { Idata, useAppDispatch, useAppSelector } from "interfaces/interfaces";
 import React, { useEffect, useState } from "react";
@@ -41,6 +43,12 @@ function ID() {
             <img src={teamId[0].img2} alt={teamId[0].team2} />
             <p>{teamId[0].team2}</p>
           </div>
+        </div>
+      </div>
+      <div className="match-result__container">
+        <p>Результат матча</p>
+        <div className="match-result">
+          <Button__result team={teamId} />
         </div>
       </div>
     </div>

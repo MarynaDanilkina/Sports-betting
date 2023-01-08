@@ -1,0 +1,11 @@
+.main{
+  margin-top: 50px;
+  position: relative;
+}
+.notification{
+  position: absolute;
+  top: -57px;
+  color: rgb(52 255 1);
+  left: 11%;
+  font-size: 17px;
+}

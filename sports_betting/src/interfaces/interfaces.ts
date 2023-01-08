@@ -13,9 +13,12 @@ export interface Idata {
   X: number;
   П2: number;
 }
-
 export interface TeamProps {
   team: Idata;
+}
+export interface Ibetting {
+  bid: { result: string };
+  team: Idata[];
 }
 
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;

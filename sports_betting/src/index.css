@@ -1,14 +1,10 @@
 :root {
-    --primary: #46cdc4;
-    --midPrimary: #2ba199;
     --darkPrimary: #0e1a10;
     --black: #141515;
     --lightBlack: #191a1a;
     --grey: #505353;
     --lightGrey: #787d7d;
     --white: #f7fdfc;
-    --red: #cd4646;
-    --midRed: #a12b2b;
 }
 body{
   margin: 0;
