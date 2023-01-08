@@ -12,7 +12,7 @@ function Welcome() {
 
   if (notification) {
     setTimeout(() => {
-      //dispatch(notificationNo());
+      dispatch(notificationNo());
     }, 3000);
   }
   console.log(betting);
