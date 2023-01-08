@@ -1,0 +1,85 @@
+.button__result{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 80vw;
+}
+.button__result-title{
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+.button__result-coefficient{
+  color: #8cc5e1;
+}
+.label{
+  background-color: #f0f8f9;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.label:hover{
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+.label__team{
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.button__container{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.submit{
+    background: #e0edcd;
+    border-radius: 8px;
+    padding: 9px 0px;
+    max-width: 1080px;
+    width: 13vw;
+    color: var(--darkPrimary);
+    font-family: RF Dewi Expanded;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.submit:hover{
+  background: #d0f6ae;
+  cursor: pointer;
+}
+.submit:disabled{
+  background: #b7b7b7;
+  cursor: default;
+}
+@media (max-width: 1200px){
+  .submit {
+    width: 18vw;
+  }
+}
+@media (max-width: 1000px){
+  .submit {
+    width: 23vw;
+  }
+}
+@media (max-width: 800px){
+  .label {
+    background-color: #f0f8f9;
+    width: 100%;
+    padding: 12px 10px;
+  }
+  .submit {
+    font-size: 10px;
+  }
+  .label__team {
+    font-size: 11px;
+  }
+}

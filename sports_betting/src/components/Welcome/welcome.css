@@ -1,0 +1,48 @@
+.main{
+  margin-top: 50px;
+  position: relative;
+}
+.notification{
+  position: absolute;
+  top: -57px;
+  color: rgb(52 255 1);
+  left: 11%;
+  font-size: 17px;
+}
+@media (max-width: 800px){
+  .main {
+    margin-top: 25px;
+  }
+  .notification {
+    font-size: 16px;
+    top: -40px;
+  }
+}
+@media (max-width: 600px){
+  .notification {
+    font-size: 12px;
+    top: -30px;
+  }
+  .notification {
+    left: 7%;
+  }
+  .team__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: azure;
+    padding-left: 20px;
+  }
+  .team__time-container {
+    width: 20vw;
+    flex-direction: row;
+  } 
+  .team__name {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .notification {
+    font-size: 10px;
+    top: -35px;
+  }
+}
