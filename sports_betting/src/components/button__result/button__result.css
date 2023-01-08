@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  min-width: 1200px;
+  min-width: 80vw;
 }
 .button__result-title{
   font-size: 15px;
@@ -49,6 +49,7 @@
     line-height: 100%;
     text-transform: uppercase;
     border: none;
+    margin-bottom: 50px;
 }
 
 .submit:hover{
@@ -58,4 +59,27 @@
 .submit:disabled{
   background: #b7b7b7;
   cursor: default;
+}
+@media (max-width: 1200px){
+  .submit {
+    width: 18vw;
+  }
+}
+@media (max-width: 1000px){
+  .submit {
+    width: 23vw;
+  }
+}
+@media (max-width: 800px){
+  .label {
+    background-color: #f0f8f9;
+    width: 100%;
+    padding: 12px 10px;
+  }
+  .submit {
+    font-size: 10px;
+  }
+  .label__team {
+    font-size: 11px;
+  }
 }
